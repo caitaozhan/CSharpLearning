@@ -4,15 +4,6 @@
 
     class program
     {
-        public static void stress()
-        {
-            int i = 1;
-            while (true)
-            {
-                i *= 10;
-                i /= 10;
-            }
-        }
 
         public static void Main(string[] args)
         {
@@ -38,8 +29,9 @@
             //MyYield.@return();
 
             //MyPerformanceCounter.main();
-            CPUPerformanceCounter.main();
-            //stress();
+            //CPUPerformanceCounter.main();
+
+            MyProcess.main();
 
         }
     }

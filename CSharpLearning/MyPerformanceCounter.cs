@@ -167,11 +167,11 @@ namespace CSharpLearning
                 {
                     queue_add(cpuQueue, cpu);
                 }
-                Console.WriteLine("{0} - Current CPU: {1}, Average: {2}", i, cpu, queue_avg(cpuQueue));
+                Console.WriteLine("{0} - Current CPU: {1:0.000}, Average: {2:0.000}", i, cpu, queue_avg(cpuQueue));
             }
         }
 
-        public static void queue_add(Queue<double> q, double cpu, int max_size=100)
+        public static void queue_add(Queue<double> q, double cpu, int max_size=25)
         {
             if (q.Count == max_size)
             {
