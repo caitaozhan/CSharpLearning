@@ -22,14 +22,18 @@ namespace Task
 
         private static void Run(Options options)
         {
+            //Console.WriteLine("Hello World! Sleep time is {0}", options.SleepTime);
             int i = 1;
             while (true)  // stop by control + C
             {
                 i += 1;
-                i -= 1;
                 i *= 10;
                 i /= 10;
-                Thread.Sleep(options.SleepTime);
+                if (i == 40000)
+                {
+                    Thread.Sleep(options.SleepTime);
+                    i = 1;
+                }
             }
         }
     }

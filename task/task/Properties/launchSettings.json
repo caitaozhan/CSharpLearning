@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Task": {
+      "commandName": "Project",
+      "commandLineArgs": "-s 1"
+    }
+  }
+}
