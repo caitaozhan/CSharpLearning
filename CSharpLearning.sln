@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLearning", "CSharpLearning\CSharpLearning.csproj", "{3DCB2F49-A9B8-4947-84CB-98FFFDBFC616}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpLearning", "CSharpLearning\CSharpLearning.csproj", "{3DCB2F49-A9B8-4947-84CB-98FFFDBFC616}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task", "task\task\Task.csproj", "{0C81A72A-D50C-44E5-B163-0DADE4568A9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiFarePrediction", "TaxiFarePrediction\TaxiFarePrediction.csproj", "{0386347F-AAFE-4F6A-87DC-BF993E824A34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0C81A72A-D50C-44E5-B163-0DADE4568A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C81A72A-D50C-44E5-B163-0DADE4568A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C81A72A-D50C-44E5-B163-0DADE4568A9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0386347F-AAFE-4F6A-87DC-BF993E824A34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0386347F-AAFE-4F6A-87DC-BF993E824A34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0386347F-AAFE-4F6A-87DC-BF993E824A34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0386347F-AAFE-4F6A-87DC-BF993E824A34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
