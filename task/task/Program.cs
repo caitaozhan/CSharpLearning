@@ -29,7 +29,7 @@ namespace Task
                 i += 1;
                 i *= 10;
                 i /= 10;
-                if (i == 40000)
+                if (i == 10000)
                 {
                     Thread.Sleep(options.SleepTime);
                     i = 1;

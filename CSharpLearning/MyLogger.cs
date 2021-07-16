@@ -1,11 +1,13 @@
 ﻿
 namespace CSharpLearning
 {
+    using System;
     using System.IO;
     using System.Reflection;
     using System.Threading;
     using Microsoft.Extensions.Logging;
     using Microsoft.Extensions.Configuration;
+    using Serilog.Extensions.Logging.File;
 
     public class MyLogger
     {
@@ -15,10 +17,11 @@ namespace CSharpLearning
         public static void main()
         {
             string configPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "config.json");
+            string logPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "mylog.txt");
 
             IConfigurationRoot loggingConfiguration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile(configPath, optional: true, reloadOnChange: true)
+                .AddJsonFile(configPath, optional: false, reloadOnChange: true)
                 .Build();
 
             loggerFactory = LoggerFactory.Create(builder =>
@@ -26,8 +29,12 @@ namespace CSharpLearning
                 builder
                     .ClearProviders()
                     .AddConfiguration(loggingConfiguration.GetSection("Logging"))
+                    .AddFile(logPath)
                     .AddConsole();
             });
+
+            Console.WriteLine(loggingConfiguration.GetSection("Logging").Value);
+            int a = loggingConfiguration.GetValue<int>("caitao");
 
             logger = loggerFactory.CreateLogger<MyLogger>();
 

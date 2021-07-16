@@ -11,7 +11,7 @@
             //TestOptionAttribute.main(args);
 
             // testing Logging.cs
-            //MyLogger.main();
+            MyLogger.main();
 
             // testing MyThreading.cs
             //MyThreading.TestTask();
@@ -31,7 +31,9 @@
             //MyPerformanceCounter.main();
             //CPUPerformanceCounter.main();
 
-            MyProcess.main();
+            //MyProcess.main();
+
+            // LinearRegression.main();
 
         }
     }
