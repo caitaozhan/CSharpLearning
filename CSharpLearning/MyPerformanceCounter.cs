@@ -190,5 +190,32 @@ namespace CSharpLearning
             return avg;
         }
     }
+
+    public class GetProcessorCount
+    {
+        public static int main()
+        {
+            int upBound = 512;
+            int count = 1;
+            PerformanceCounter theCPUCounter;
+            for (int i = 0; i < upBound; i++)
+            {
+                try
+                {
+                    theCPUCounter = new PerformanceCounter("Processor", "% Processor Time", string.Format("{0}", i));
+                    theCPUCounter.NextValue();
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    count = i;
+                    break;
+                }
+            }
+            Console.WriteLine("Logical CPU number is {0}", count);
+            return count;
+        }
+    }
 }
+
 

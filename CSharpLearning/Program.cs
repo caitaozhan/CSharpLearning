@@ -11,7 +11,7 @@
             //TestOptionAttribute.main(args);
 
             // testing Logging.cs
-            MyLogger.main();
+            // MyLogger.main();
 
             // testing MyThreading.cs
             //MyThreading.TestTask();
@@ -30,6 +30,7 @@
 
             //MyPerformanceCounter.main();
             //CPUPerformanceCounter.main();
+            GetProcessorCount.main();
 
             //MyProcess.main();
 
