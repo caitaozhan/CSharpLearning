@@ -29,7 +29,7 @@ namespace TaxiFarePrediction
 
     public class TaxiTripFarePrediction
     {
-        [ColumnName("score")]
+        [ColumnName("Score")]
         public float FareAmount;
     }
 }
